@@ -1,10 +1,12 @@
 # camera-calibration-projection
 
 [Theory of Calibration and 3D reconstruction](https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html?highlight=solvepnp)
+[Theory of Geometric Camera Parameters](https://www.cse.unr.edu/~bebis/CS791E/Notes/CameraParameters.pdf)
 
 ## Calibration tool:
 [Orbbec calibration tool](https://3dclub.orbbec3d.com/t/universal-download-thread-for-astra-series-cameras/622)
 [OpenCV tutorial of calibration](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_calib3d/py_calibration/py_calibration.html)
+[More complicated about theory of camera calibration](http://cvgl.stanford.edu/teaching/cs231a_winter1415/lecture/lecture3_camera_calibration_notes.pdf)
 
 ## 2D-3D Projections:
 [C++ code](https://github.com/JasonChu1313/KinectUtil/blob/master/ProjectUtil.cpp)
