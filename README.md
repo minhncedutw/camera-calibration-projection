@@ -8,7 +8,7 @@
 
 ## 2D-3D Projections:
 [C++ code](https://github.com/JasonChu1313/KinectUtil/blob/master/ProjectUtil.cpp)
-```C
+```C++
 int ProjectUtil:: projectToPointCloud( cv::Mat &depth,vector<Point3d> &pointCloud){
     float fx=depthIntrinsic.at<float>(0,0);
     float fy=depthIntrinsic.at<float>(1,1);
@@ -39,3 +39,6 @@ int ProjectUtil:: projectToPointCloud( cv::Mat &depth,vector<Point3d> &pointClou
     return 1;
 }
 ```
+
+*Notice*
+> The calibration matrix K can directly be defined such that image coordinates are obtained. This is done by scaling the focal length with the largest dimension, i.e. with max(width, height), and setting the principal point to width / 2 and height / 2 respectively. This yields continuous coordinates on the image plane between (0,0) and (width, height). The center of pixel (0,0) is at (0.5, 0.5), i.e. the obtained coordinates on the image plane need to be subtracted by (0.5, 0.5) to obtain pixel coordinates.
