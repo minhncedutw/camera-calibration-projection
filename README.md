@@ -42,4 +42,4 @@ int ProjectUtil:: projectToPointCloud( cv::Mat &depth,vector<Point3d> &pointClou
 
 *Notice*
 > The calibration matrix K can directly be defined such that image coordinates are obtained. This is done by scaling the focal length with the largest dimension, i.e. with max(width, height), and setting the principal point to width / 2 and height / 2 respectively. This yields continuous coordinates on the image plane between (0,0) and (width, height). The center of pixel (0,0) is at (0.5, 0.5), i.e. the obtained coordinates on the image plane need to be subtracted by (0.5, 0.5) to obtain pixel coordinates.
-You can reference source [here](https://github.com/simonfuhrmann/mve/wiki/Math-Cookbook)
+(You can reference source [here](https://github.com/simonfuhrmann/mve/wiki/Math-Cookbook))
